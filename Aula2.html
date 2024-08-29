@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem adipisci ea nostrum sint ex similique excepturi rem perferendis mollitia, modi repellat vel dignissimos praesentium! Totam earum reiciendis labore aut!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis inventore voluptatum, vitae eligendi ab impedit aperiam expedita voluptatibus earum similique id dignissimos natus? Eos nisi enim nobis ipsa minima adipisci!</p>
+        <div id="p"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rem sapiente, dolor cum aspernatur nostrum ad recusandae magnam saepe sed nemo non, aliquam odit voluptate et repudiandae debitis laboriosam beatae.</p> </div>
+        <p class="h">Olá Bunda </p>
+        <p name="bunda" >Obrigado bunda ?</p>
+        <div class="div">
+            <h1>
+                GOlira
+            </h1>
+        </div>
+    </main>
+
+    <script>
+        /* usando get elements puxando pela tag */
+
+        let p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.background = "Red"
+
+        /* usando get elements puxando pelo id */
+
+        let p2 = window.document.getElementById('p')
+        p2.style.color = 'blue'
+
+        /* usando get elements puxando pela classe */
+
+        let h1 = window.document.getElementsByClassName('h')[0]
+        h1.style.background = 'green'
+
+        /* usando get elements puxando pelo nome *///    "innerText" para alterar o texto 
+
+        let b = window.document.getElementsByName('bunda')[0]
+        b.style.background = 'blue'
+        b.innerHTML = "<strong> Pornada </strong>"
+        b.style.color = 'white'
+
+        /* usando get elements puxando pelo quary selector */
+
+        let d = window.document.querySelector('div.div')
+        d.style.background = 'black'
+        d.style.color = 'white'
+
+    </script>
+</body>
+</html>

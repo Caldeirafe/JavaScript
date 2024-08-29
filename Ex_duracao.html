@@ -8,14 +8,31 @@
 </head>
 <body>
     <script>
-    let seg = Number.parseInt( prompt('Digite a duração em Segundos: '))
+   /* let seg = Number.parseInt( prompt('Digite a duração em Segundos: '))
 
     let horas = Number.parseInt(seg/3600)
     let resto = Number.parseInt(seg/3600) | 0
     let min = Number.parseInt (resto/60)
     resto = resto % 60
 
-    alert(`Horas ${horas} : Minutos ${min} : Segundos ${seg}`)
+    alert(`Horas ${horas} : Minutos ${min} : Segundos ${seg}`)*/
+    let seg = Number.parseInt(prompt('Digite a duração em Segundos: '), 10);
+
+// Calcular horas
+let horas = Math.floor(seg / 3600);
+
+// Calcular o resto de segundos após remover as horas
+let resto = seg % 3600;
+
+// Calcular minutos
+let min = Math.floor(resto / 60);
+
+// Calcular segundos restantes
+let segundos = resto % 60;
+
+// Exibir resultado
+alert(`Horas: ${horas} : Minutos: ${min} : Segundos: ${segundos}`);
+
     </script>
 </body>
 </html>
