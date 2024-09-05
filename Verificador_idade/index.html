@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript" defer></script>
+    <title>Verificador de Idade</title>
+</head>
+<body id="body" onload="myfunction()">
+    <main>
+        <h1>Verificador de Idade</h1>
+
+        <section>
+            <div>
+                <p>
+                    Ano de Nascimento: 
+                    <input type="number" id="nascimento" name="anoNascimento" placeholder="De 1900 a 2023" min="1900" max="2023" required class="idade">
+                </p>
+                <p>
+                    Sexo: 
+                    <input type="radio" id="M" name="sexo" value="masculino">
+                    <label for="M">Masculino</label>
+                    <input type="radio" id="F" name="sexo" value="feminino">
+                    <label for="F">Feminino</label>
+                </p>
+                <p>
+                    <input type="button" value="Verificar" id="btn" onclick="verificar()">
+                </p>
+                <div>
+                    <img src="" alt="" id="img">
+                </div>
+                <p id="p"></p>
+            </div>
+        </section>
+        <br>
+        <footer>
+            © Felipe Caldeira
+        </footer>
+    </main>
+</body>
+</html>
