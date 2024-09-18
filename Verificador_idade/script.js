@@ -17,8 +17,8 @@ function verificar() {
 
     const img = document.getElementById('img');
     if (sexo.value === 'masculino') {
-        img.src = 'caminho/para/imagem/masculino.jpg'; // Substitua pelo caminho real
+        img.src = 'homem.jpg'; // Substitua pelo caminho real
     } else if (sexo.value === 'feminino') {
-        img.src = 'caminho/para/imagem/feminino.jpg'; // Substitua pelo caminho real
+        img.src = 'mulher.jfif' // Substitua pelo caminho real
     }
 }
