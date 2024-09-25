@@ -1,29 +1,30 @@
 function calcularMediaESoma() {
-    let N
-    let soma = 0
-    let vet = [] //vetor para armazenar os numeros
+    let N;
+    let soma = 0;
+    let vet = []; // vetor para armazenar os números
 
-    //solicitar numeros
+    // Solicitar números
     do {
-        N = parseInt(prompt("Quantos numeros você vai digitar?"))
-    } while (N <= 0 || N > 10)
+        N = parseInt(prompt("Quantos números você vai digitar?"));
+    } while (N <= 0 || N > 10);
 
     for (let i = 0; i < N; i++) {
-        let numero = parseInt(prompt("Digite o numero:"))
-        vet.push(numero) // adicionar numero ao vetor
-        soma += numero   //atualizar a soma
+        let numero = parseInt(prompt("Digite o número:"));
+        vet.push(numero); // Adicionar número ao vetor
+        soma += numero;   // Atualizar a soma
     }
-    let media = soma / 2
+    
+    let media = soma / N;
 
-    document.write('<table border="1">');
+    // Exibir resultados tabela
+    document.write('<table>');
     document.write('<tr><th>Valores</th></tr>');
     for (let i = 0; i < N; i++) {
         document.write('<tr><td>' + vet[i] + '</td></tr>'); // Exibir os valores
     }
-    document.write('<tr><td>Soma: ' + soma + '</td></tr>'); // Exibir a soma
-    document.write('<tr><td>Média: ' + media + '</td></tr>'); // Exibir a média
+    document.write('<tr><td><strong>Soma: ' + soma + '</strong></td></tr>'); 
+    document.write('<tr><td><strong>Média: ' + media + '</strong></td></tr>'); 
     document.write('</table>');
 }
 
-
-calcularMediaESoma()
+calcularMediaESoma();
