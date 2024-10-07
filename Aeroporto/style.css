@@ -16,6 +16,7 @@ header {
     background: #1d1d1d;
     color: #ffffff;
     padding: 10px;
+    margin-bottom: 2%;
 }
 
 header nav {
@@ -28,14 +29,32 @@ header nav {
     text-align: center;
 }
 
+h2{
+    margin-bottom: 2%;
+}
 
-main{
-    background-image: url(airport.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size:cover;
-    height: 900px;
+.um{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.img_2{
+    width: 100%;
+}
+
+
+
+.texto{
+    width: 30%;
+    text-align: left;
+    text-justify: auto;
+    padding-right: 9%;
+    padding-left: 9%;
+
 }
 
 #regiao{
@@ -45,22 +64,27 @@ main{
     background: #007bff;
     padding: 10px;
 }
+
 a{
     text-decoration: none;
     color: #ffffff;
     margin: 0 15px;
 }
+
 nav {
     margin: 20px 0;
 }
+
 nav a {
     margin: 0 15px;
     color: #ffffff;
     text-decoration: none;
 }
+
 section {
     padding: 20px;
 }
+
 footer {
     text-align: center;
     padding: 10px;
