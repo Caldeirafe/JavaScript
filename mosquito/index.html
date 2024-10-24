@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mosquito</title>
+</head>
+<body>
+    <main>
+        <div id="divmenu">
+            <img id="menu" src="game.png" alt="Imagem do jogo">
+            <div class="radio-input">
+                <label for="facil">
+                    <input type="radio" id="facil" name="value-radio" value="facil" aria-label="Fácil">
+                    <span>Fácil</span>
+                </label>
+                <label for="normal">
+                    <input type="radio" id="normal" name="value-radio" value="normal" aria-label="Normal">
+                    <span>Normal</span>
+                </label>
+                <label for="dificil">
+                    <input type="radio" id="dificil" name="value-radio" value="dificil" aria-label="Difícil">
+                    <span>Difícil</span>
+                </label>
+                <span class="selection"></span>
+            </div>
+            <button type="button" class="button">
+                <div class="button-top">Começar!</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+            </button>
+        </div>
+    </main>
+
+    <img id="mosquit" src="mosquito.png" alt="Imagem de um mosquito" style="display: none;">
+    <div id="vidas" style="display: none;">
+        <img class="vida-cheia" src="coracao_cheio.png" alt="Vida cheia">
+        <img class="vida-cheia" src="coracao_cheio.png" alt="Vida cheia">
+        <img class="vida-cheia" src="coracao_cheio.png" alt="Vida cheia">
+        <img class="vida-vazia" src="coracao_vazio.png" alt="Vida vazia" style="display: none;">
+        <img class="vida-vazia" src="coracao_vazio.png" alt="Vida vazia" style="display: none;">
+        <img class="vida-vazia" src="coracao_vazio.png" alt="Vida vazia" style="display: none;">
+    </div>
+    
+    <div id="divover"><img id="gameover" src="game_over.png" alt="Game Over" style="display: none;"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

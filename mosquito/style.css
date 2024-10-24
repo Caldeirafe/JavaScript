@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    cursor: url(mata_mosquito.png) 16 16, pointer;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#menu{
+    width: 70%;
+    height: 70%;
+}
+
+#divmenu{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    gap: 30px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#mosquit{
+    width: 80px;
+    height: 80px;
+}
+
+select{
+    width: 30%;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+}
+
+.vida-cheia{
+
+    width: 3%;
+    height: 3%;
+}
+.vida-vazia{
+
+    width: 3%;
+    height: 3%;
+}
+
+#divover{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6%;
+
+}
+
+/* From Uiverse.io by elijahgummer */ 
+
+.radio-input input {
+    display: none;
+  }
+  
+  .radio-input {
+    --container_width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #cd3f64;
+    color: #ffffff;
+    width: var(--container_width);
+    overflow: hidden;
+    border: 1px solid rgba(53, 52, 52, 0.226);
+  }
+  
+  .radio-input label {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 14px;
+  }
+  
+  .selection {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: calc(var(--container_width) / 3);
+    z-index: 0;
+    left: 0;
+    top: 0;
+    transition: .15s ease;
+  }
+  
+  .radio-input label:has(input:checked) {
+    color: #fff;
+  }
+  
+  .radio-input label:has(input:checked) ~ .selection {
+    background-color: rgb(53, 53, 53);
+    display: inline-block;
+  }
+  
+  .radio-input label:nth-child(1):has(input:checked) ~ .selection {
+    transform: translateX(calc(var(--container_width) * 0/3));
+  }
+  
+  .radio-input label:nth-child(2):has(input:checked) ~ .selection {
+    transform: translateX(calc(var(--container_width) * 1/3));
+  }
+  
+  .radio-input label:nth-child(3):has(input:checked) ~ .selection {
+    transform: translateX(calc(var(--container_width) * 2/3));
+  }
+
+/* botão 3d ------------------------------------------------------------------*/
+.button {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    border-width: 0;
+    padding: 0 8px 12px;
+    min-width: 10em;
+    box-sizing: border-box;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+}
+
+.button-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    padding: 8px 16px;
+    transform: translateY(0);
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, .25);
+    transition-property: transform;
+    transition-duration: .2s;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  .button:active .button-top {
+    transform: translateY(6px);
+  }
+  
+  .button-top::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    background-image: radial-gradient(#cd3f64, #9d3656);
+    text-align: center;
+    color: #fff;
+    box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, .2), 0 1px 2px 1px rgba(255, 255, 255, .2);
+    transition-property: border-radius, padding, width, transform;
+    transition-duration: .2s;
+  }
+  
+  .button:active .button-top::after {
+    border-radius: 6px;
+    padding: 0 2px;
+  }
+  
+  .button-bottom {
+    position: absolute;
+    z-index: -1;
+    bottom: 4px;
+    left: 4px;
+    border-radius: 8px / 16px 16px 8px 8px;
+    padding-top: 6px;
+    width: calc(100% - 8px);
+    height: calc(100% - 10px);
+    box-sizing: content-box;
+    background-color: #803;
+    background-image: radial-gradient(4px 8px at 4px calc(100% - 8px), rgba(255, 255, 255, .25), transparent), radial-gradient(4px 8px at calc(100% - 4px) calc(100% - 8px), rgba(255, 255, 255, .25), transparent), radial-gradient(16px at -4px 0, white, transparent), radial-gradient(16px at calc(100% + 4px) 0, white, transparent);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5), inset 0 -1px 3px 3px rgba(0, 0, 0, .4);
+    transition-property: border-radius, padding-top;
+    transition-duration: .2s;
+  }
+  
+  .button:active .button-bottom {
+    border-radius: 10px 10px 8px 8px / 8px;
+    padding-top: 0;
+  }
+  
+  .button-base {
+    position: absolute;
+    z-index: -2;
+    top: 4px;
+    left: 0;
+    border-radius: 12px;
+    width: 100%;
+    height: calc(100% - 4px);
+    background-color: rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, .75), inset 0 2px 2px rgba(0, 0, 0, .25);
+  }
+
