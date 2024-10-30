@@ -76,3 +76,75 @@ const saque = transacoes.reduce((preval, elem) =>{
 
 console.log(saque)
 
+//Exercicio 7
+
+const num = [0, -2, 4, 5, 6, -8, 7, -9, 10]
+
+console.log(num.every(x => x < 0))
+
+//Exercicio 8
+
+const alunos = [ 
+    { nome: 'Ana', nota: 7 }, 
+    { nome: 'João', nota: 5 }, 
+    { nome: 'Maria', nota: 8 } 
+]; 
+
+const nota = (alunos.every(x => x.nota >= 6))
+console.log (nota)
+
+//Exercicio 9
+
+const n = [0, -1, 5, 6, 8, 9, -7]
+const v = n.some(x => x < 0)
+
+console.log(v)
+
+// Exercicio 10 
+
+const produto = [ 
+
+    { nome: 'Camiseta', preco: 29.99 }, 
+    { nome: 'Calça', preco: 49.99 }, 
+    { nome: 'Tênis', preco: 120.00 } 
+]; 
+console.table(produto)
+const m = produto.some(x => x.preco > 100)
+
+console.log(m)
+
+// Exercicio 11
+
+const mune = [0, 1, 2, 3, 4, 5, 70, 46, 10, 12, 30]
+const gg = mune.find(x => x > 10)
+
+console.log(gg)
+
+//Exercicio 12
+
+const pessoa = [ 
+
+    { nome: 'Ana', idade: 17 }, 
+    { nome: 'João', idade: 20 }, 
+    { nome: 'Maria', idade: 19 } 
+]; 
+
+const lind = pessoa.find(x=>x.idade > 18)
+
+console.log(lind)
+
+//Exercicio 13
+
+const pingo = [0, 2, 6, 5, 8, 10, 9, 1, 25]
+
+const ping = pingo.includes(25)
+
+console.log(ping)
+
+//Exercicio 14
+
+const frutas = ['Banana', 'Laranja', 'Maçã', 'Manga']; 
+
+const frut = frutas.includes('Manga')
+
+console.log(frut)
